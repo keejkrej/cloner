@@ -1,7 +1,9 @@
-import 'dart:io';
+import 'dart:io' show Directory, Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 
 class DatabaseService {
   static Database? _database;
@@ -13,17 +15,22 @@ class DatabaseService {
   }
 
   static Future<Database> _initDb() async {
-    if (Platform.isWindows || Platform.isLinux) {
-      sqfliteFfiInit();
-      databaseFactory = databaseFactoryFfi;
-    }
+    String dbPath = 'chatgpt.db';
+    if (kIsWeb) {
+      databaseFactory = databaseFactoryFfiWebNoWebWorker;
+    } else {
+      if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+        sqfliteFfiInit();
+        databaseFactory = databaseFactoryFfi;
+      }
 
-    final appDocDir = await getApplicationDocumentsDirectory();
-    final dbDir = Directory(p.join(appDocDir.path, 'ChatGPTClone'));
-    if (!await dbDir.exists()) {
-      await dbDir.create(recursive: true);
+      final appDocDir = await getApplicationDocumentsDirectory();
+      final dbDir = Directory(p.join(appDocDir.path, 'ChatGPTClone'));
+      if (!await dbDir.exists()) {
+        await dbDir.create(recursive: true);
+      }
+      dbPath = p.join(dbDir.path, 'chatgpt.db');
     }
-    final dbPath = p.join(dbDir.path, 'chatgpt.db');
 
     return await databaseFactory.openDatabase(
       dbPath,

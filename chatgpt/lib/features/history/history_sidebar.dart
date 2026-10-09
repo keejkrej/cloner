@@ -174,15 +174,14 @@ class _ConversationTileState extends State<_ConversationTile> {
       onExit: (_) => setState(() => _isHovered = false),
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 2),
-        decoration: BoxDecoration(
+        child: Material(
           color: widget.isSelected
               ? const Color(0xFF212121)
               : _isHovered
                   ? const Color(0xFF1E1E1E)
                   : Colors.transparent,
           borderRadius: BorderRadius.circular(8),
-        ),
-        child: ListTile(
+          child: ListTile(
           dense: true,
           contentPadding: const EdgeInsets.symmetric(horizontal: 10),
           title: Text(
@@ -207,8 +206,9 @@ class _ConversationTileState extends State<_ConversationTile> {
           onTap: widget.onTap,
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }
 
 class _SidebarFooterButton extends StatelessWidget {
