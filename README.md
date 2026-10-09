@@ -47,7 +47,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 |---|---|---|---|---|
 | 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ✅ |
 | 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ✅ |
-| 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ⬜ |
+| 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ✅ |
 | 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ✅ |
 | 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ⬜ |
 | 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ⬜ |
@@ -176,10 +176,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `re_editor` or `flutter_code_editor`, `re_highlight`, `watcher`, `diff_match_patch`.
 
 **✅ Signature-Complete when**
-- [ ] "Where is X handled?" on a real repo finds the right files
-- [ ] A requested change shows as a diff; accept writes, reject discards
-- [ ] Ghost-text completions appear while typing; Tab inserts
-- [ ] Index updates after saving a file
+- [x] "Where is X handled?" on a real repo finds the right files
+- [x] A requested change shows as a diff; accept writes, reject discards
+- [x] Ghost-text completions appear while typing; Tab inserts
+- [x] Index updates after saving a file
 
 **Cut:** `@` mentions, LSP, extensions, git UI, terminal, multi-cursor, background agents.
 
