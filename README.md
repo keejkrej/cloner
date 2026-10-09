@@ -56,7 +56,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 9 | Midjourney | diffusion API · prompt enhancer · image gallery | ⭐⭐ | ⬜ |
 | 10 | Gamma | outline → slides · layout engine · themes | ⭐⭐⭐ | ⬜ |
 | 11 | Devin | task planner · browser · code executor · PR bot | ⭐⭐⭐⭐⭐ | ⬜ |
-| 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ⬜ |
+| 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ✅ |
 | 13 | Zapier AI | natural language → workflows · API connectors | ⭐⭐⭐⭐ | ⬜ |
 | 14 | Harvey | legal doc RAG · clause extraction · citations | ⭐⭐⭐ | ⬜ |
 | 15 | Siri | wake word · speech-to-text · tool calling · voice reply | ⭐⭐⭐ | ⬜ |
@@ -406,10 +406,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `record`, `just_audio`.
 
 **✅ Signature-Complete when**
-- [ ] A created character stays in persona over a long chat
-- [ ] It recalls something from a much earlier session
-- [ ] Replies are spoken in the character's voice; push-to-talk works
-- [ ] Characters and chats persist
+- [x] A created character stays in persona over a long chat
+- [x] It recalls something from a much earlier session
+- [x] Replies are spoken in the character's voice; push-to-talk works
+- [x] Characters and chats persist
 
 **Cut:** swipe/regenerate, message editing, multiple threads per character, group chats, sharing, generated avatars.
 
