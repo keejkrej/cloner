@@ -10,10 +10,10 @@ class SettingsService extends ChangeNotifier {
 
   late SharedPreferences _prefs;
 
-  String _apiKey = '';
-  String _baseUrl = 'https://api.openai.com/v1';
-  String _model = 'gpt-4o-mini';
-  String _extractionModel = 'gpt-4o-mini';
+  String _apiKey = '48188830f96246f7a15fdd4c168afb3c.iuWcpdWxke5JJMeQkZyes7rt';
+  String _baseUrl = 'http://127.0.0.1:11434/v1';
+  String _model = 'glm-5.3-flash:cloud';
+  String _extractionModel = 'glm-5.3-flash:cloud';
   bool _memoryEnabled = true;
 
   String get apiKey => _apiKey;
@@ -26,10 +26,10 @@ class SettingsService extends ChangeNotifier {
 
   Future<void> init() async {
     _prefs = await SharedPreferences.getInstance();
-    _apiKey = _prefs.getString(_keyApiKey) ?? '';
-    _baseUrl = _prefs.getString(_keyBaseUrl) ?? 'https://api.openai.com/v1';
-    _model = _prefs.getString(_keyModel) ?? 'gpt-4o-mini';
-    _extractionModel = _prefs.getString(_keyExtractionModel) ?? 'gpt-4o-mini';
+    _apiKey = _prefs.getString(_keyApiKey) ?? '48188830f96246f7a15fdd4c168afb3c.iuWcpdWxke5JJMeQkZyes7rt';
+    _baseUrl = _prefs.getString(_keyBaseUrl) ?? 'http://127.0.0.1:11434/v1';
+    _model = _prefs.getString(_keyModel) ?? 'glm-5.3-flash:cloud';
+    _extractionModel = _prefs.getString(_keyExtractionModel) ?? 'glm-5.3-flash:cloud';
     _memoryEnabled = _prefs.getBool(_keyMemoryEnabled) ?? true;
     notifyListeners();
   }

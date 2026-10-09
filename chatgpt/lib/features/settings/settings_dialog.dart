@@ -148,8 +148,12 @@ class _SettingsDialogState extends State<SettingsDialog> {
                   ActionChip(
                     label: const Text('Ollama (Local)', style: TextStyle(fontSize: 11)),
                     onPressed: () {
-                      _baseUrlController.text = 'http://localhost:11434/v1';
-                      _modelController.text = 'llama3.2';
+                      _baseUrlController.text = 'http://127.0.0.1:11434/v1';
+                      _modelController.text = 'glm-5.3-flash:cloud';
+                      _extractionModelController.text = 'glm-5.3-flash:cloud';
+                      if (_apiKeyController.text.isEmpty) {
+                        _apiKeyController.text = '48188830f96246f7a15fdd4c168afb3c.iuWcpdWxke5JJMeQkZyes7rt';
+                      }
                     },
                   ),
                 ],

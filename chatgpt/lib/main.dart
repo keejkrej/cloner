@@ -1,6 +1,8 @@
-import 'dart:io';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import 'core/settings/settings_service.dart';
 import 'features/chat/chat_service.dart';
 import 'features/chat/chat_view.dart';
@@ -10,22 +12,40 @@ import 'features/memory/memory_service.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (Platform.isWindows || Platform.isLinux) {
+  if (kIsWeb) {
+    try {
+      databaseFactory = databaseFactoryFfiWebNoWebWorker;
+    } catch (e) {
+      debugPrint('Error setting web database factory: $e');
+    }
+  } else if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
   }
 
   final settingsService = SettingsService();
-  await settingsService.init();
+  try {
+    await settingsService.init();
+  } catch (e) {
+    debugPrint('Error initializing settings: $e');
+  }
 
   final memoryService = MemoryService();
-  await memoryService.loadMemories();
+  try {
+    await memoryService.loadMemories();
+  } catch (e) {
+    debugPrint('Error loading memories: $e');
+  }
 
   final chatService = ChatService(
     settingsService: settingsService,
     memoryService: memoryService,
   );
-  await chatService.init();
+  try {
+    await chatService.init();
+  } catch (e) {
+    debugPrint('Error initializing chat service: $e');
+  }
 
   runApp(ChatGPTCloneApp(
     settingsService: settingsService,
