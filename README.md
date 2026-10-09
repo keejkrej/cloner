@@ -352,10 +352,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `auto_size_text`, `google_fonts`.
 
 **✅ Signature-Complete when**
-- [ ] Topic → outline → deck in one flow
-- [ ] Slides use varied, sensible layouts
-- [ ] Switching theme restyles every slide instantly
-- [ ] Decks persist and can be presented fullscreen
+- [x] Topic → outline → deck in one flow
+- [x] Slides use varied, sensible layouts
+- [x] Switching theme restyles every slide instantly
+- [x] Decks persist and can be presented fullscreen
 
 **Cut:** inline editing, per-slide AI rewrite, PDF/PPTX export, websites/docs modes, analytics.
 
