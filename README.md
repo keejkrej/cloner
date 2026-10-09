@@ -45,10 +45,10 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 
 | # | Clone of | Signature features | Difficulty | Status |
 |---|---|---|---|---|
-| 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ⬜ |
-| 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ⬜ |
-| 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ⬜ |
-| 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ⬜ |
+| 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ✅ |
+| 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ✅ |
+| 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ✅ |
+| 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ✅ |
 | 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ⬜ |
 | 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ⬜ |
 | 7 | Granola | live transcription · speaker labels · meeting notes | ⭐⭐⭐ | ⬜ |
@@ -123,10 +123,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **APIs:** one LLM provider (chat + embeddings).
 
 **✅ Signature-Complete when**
-- [ ] Responses stream live and can be stopped
-- [ ] Conversations persist and can be reopened
-- [ ] A fact told in chat A is used in a new chat B
-- [ ] Memories are viewable and deletable
+- [x] Responses stream live and can be stopped
+- [x] Conversations persist and can be reopened
+- [x] A fact told in chat A is used in a new chat B
+- [x] Memories are viewable and deletable
 
 **Cut:** model picker, regenerate, auto-titles, rename, search, image upload, voice, custom GPTs, sharing.
 
@@ -149,10 +149,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `html`, `url_launcher`.
 
 **✅ Signature-Complete when**
-- [ ] Any question returns a streamed answer grounded in live web results
-- [ ] A rerank step decides what the LLM sees
-- [ ] Claims carry clickable citations to real sources
-- [ ] Follow-ups work; threads persist
+- [x] Any question returns a streamed answer grounded in live web results
+- [x] A rerank step decides what the LLM sees
+- [x] Claims carry clickable citations to real sources
+- [x] Follow-ups work; threads persist
 
 **Cut:** related questions, query rewriting UI, Spaces, Discover, image/video search, Pro modes.
 
@@ -176,10 +176,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `re_editor` or `flutter_code_editor`, `re_highlight`, `watcher`, `diff_match_patch`.
 
 **✅ Signature-Complete when**
-- [ ] "Where is X handled?" on a real repo finds the right files
-- [ ] A requested change shows as a diff; accept writes, reject discards
-- [ ] Ghost-text completions appear while typing; Tab inserts
-- [ ] Index updates after saving a file
+- [x] "Where is X handled?" on a real repo finds the right files
+- [x] A requested change shows as a diff; accept writes, reject discards
+- [x] Ghost-text completions appear while typing; Tab inserts
+- [x] Index updates after saving a file
 
 **Cut:** `@` mentions, LSP, extensions, git UI, terminal, multi-cursor, background agents.
 
@@ -203,10 +203,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `dart:io` `Process`, `glob`, `diff_match_patch`.
 
 **✅ Signature-Complete when**
-- [ ] "Add a test for X and make it pass" completes over multiple tool calls on its own
-- [ ] Edits are shown as diffs and applied
-- [ ] Commands stream output and require approval
-- [ ] Paths outside the project are refused
+- [x] "Add a test for X and make it pass" completes over multiple tool calls on its own
+- [x] Edits are shown as diffs and applied
+- [x] Commands stream output and require approval
+- [x] Paths outside the project are refused
 
 **Cut:** project memory files, session history, sub-agents, MCP, hooks, slash commands, Docker.
 
