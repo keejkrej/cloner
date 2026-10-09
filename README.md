@@ -49,7 +49,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ✅ |
 | 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ✅ |
 | 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ✅ |
-| 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ⬜ |
+| 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ✅ |
 | 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ⬜ |
 | 7 | Granola | live transcription · speaker labels · meeting notes | ⭐⭐⭐ | ⬜ |
 | 8 | ElevenLabs | text-to-speech · voice cloning | ⭐⭐ | ⬜ |
@@ -229,9 +229,9 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `pdfrx` or `syncfusion_flutter_pdf`, `just_audio`.
 
 **✅ Signature-Complete when**
-- [ ] 2+ PDFs in → answers cite the right source and page
-- [ ] "Generate audio overview" produces a playable two-voice conversation about the sources
-- [ ] Notebooks and audio persist
+- [x] 2+ PDFs in → answers cite the right source and page
+- [x] "Generate audio overview" produces a playable two-voice conversation about the sources
+- [x] Notebooks and audio persist
 
 **Cut:** source toggles, auto-summaries, suggested questions, mind maps, video overviews, PDF viewer highlighting, URL/YouTube sources, interactive mode.
 
