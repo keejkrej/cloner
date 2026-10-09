@@ -254,9 +254,9 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Requires:** Node.js + npm.
 
 **✅ Signature-Complete when**
-- [ ] "Build a todo app with categories" → running app in the preview
-- [ ] "Make it dark mode" → preview updates live
-- [ ] Projects persist and can be reopened
+- [x] "Build a todo app with categories" → running app in the preview
+- [x] "Make it dark mode" → preview updates live
+- [x] Projects persist and can be reopened
 
 **Cut:** deploying anywhere, external backends (Supabase etc.), version history, auto-fix button, code editor view, visual click-to-edit, collaboration.
 
