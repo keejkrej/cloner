@@ -48,7 +48,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ✅ |
 | 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ✅ |
 | 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ⬜ |
-| 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ⬜ |
+| 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ✅ |
 | 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ⬜ |
 | 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ⬜ |
 | 7 | Granola | live transcription · speaker labels · meeting notes | ⭐⭐⭐ | ⬜ |
@@ -203,10 +203,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `dart:io` `Process`, `glob`, `diff_match_patch`.
 
 **✅ Signature-Complete when**
-- [ ] "Add a test for X and make it pass" completes over multiple tool calls on its own
-- [ ] Edits are shown as diffs and applied
-- [ ] Commands stream output and require approval
-- [ ] Paths outside the project are refused
+- [x] "Add a test for X and make it pass" completes over multiple tool calls on its own
+- [x] Edits are shown as diffs and applied
+- [x] Commands stream output and require approval
+- [x] Paths outside the project are refused
 
 **Cut:** project memory files, session history, sub-agents, MCP, hooks, slash commands, Docker.
 
