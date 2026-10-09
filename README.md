@@ -55,7 +55,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 8 | ElevenLabs | text-to-speech · voice cloning | ⭐⭐ | ✅ |
 | 9 | Midjourney | diffusion API · prompt enhancer · image gallery | ⭐⭐ | ✅ |
 | 10 | Gamma | outline → slides · layout engine · themes | ⭐⭐⭐ | ✅ |
-| 11 | Devin | task planner · browser · code executor · PR bot | ⭐⭐⭐⭐⭐ | ⬜ |
+| 11 | Devin | task planner · browser · code executor · PR bot | ⭐⭐⭐⭐⭐ | ✅ |
 | 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ✅ |
 | 13 | Zapier AI | natural language → workflows · API connectors | ⭐⭐⭐⭐ | ✅ |
 | 14 | Harvey | legal doc RAG · clause extraction · citations | ⭐⭐⭐ | ✅ |
@@ -381,10 +381,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Requires:** git, Chrome/Chromium.
 
 **✅ Signature-Complete when**
-- [ ] A real issue produces and follows a visible plan
-- [ ] The agent uses the browser (docs or its own running app)
-- [ ] It runs tests and iterates on failures
-- [ ] It opens a real PR with a sensible description
+- [x] A real issue produces and follows a visible plan
+- [x] The agent uses the browser (docs or its own running app)
+- [x] It runs tests and iterates on failures
+- [x] It opens a real PR with a sensible description
 
 **Cut:** mid-run chat interjection, editor tab, Slack, parallel sessions, knowledge base, cloud VMs, Docker.
 
