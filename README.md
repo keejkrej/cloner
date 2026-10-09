@@ -59,7 +59,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ✅ |
 | 13 | Zapier AI | natural language → workflows · API connectors | ⭐⭐⭐⭐ | ✅ |
 | 14 | Harvey | legal doc RAG · clause extraction · citations | ⭐⭐⭐ | ✅ |
-| 15 | Siri | wake word · speech-to-text · tool calling · voice reply | ⭐⭐⭐ | ⬜ |
+| 15 | Siri | wake word · speech-to-text · tool calling · voice reply | ⭐⭐⭐ | ✅ |
 
 ### Suggested build order
 
@@ -484,10 +484,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `porcupine_flutter` or `sherpa_onnx`, `record`, `just_audio`, `tray_manager`, `window_manager`, `local_notifier`.
 
 **✅ Signature-Complete when**
-- [ ] Wake word (app in background) opens the overlay and listens
-- [ ] "Open Spotify", "Weather in Berlin?", "Timer for 5 minutes" all work
-- [ ] Every answer is spoken aloud
-- [ ] Idle CPU stays low while listening
+- [x] Wake word (app in background) opens the overlay and listens
+- [x] "Open Spotify", "Weather in Berlin?", "Timer for 5 minutes" all work
+- [x] Every answer is spoken aloud
+- [x] Idle CPU stays low while listening
 
 **Cut:** history, follow-up mode, hotkey activation, smart home, contacts/messages, multi-language.
 
