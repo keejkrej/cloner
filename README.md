@@ -303,10 +303,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `record`, `just_audio`.
 
 **✅ Signature-Complete when**
-- [ ] A paragraph becomes natural speech in a chosen voice
-- [ ] My recorded voice becomes a voice that sounds like me
-- [ ] Long text (> 1 page) works
-- [ ] Cloned voices and generated files persist
+- [x] A paragraph becomes natural speech in a chosen voice
+- [x] My recorded voice becomes a voice that sounds like me
+- [x] Long text (> 1 page) works
+- [x] Cloned voices and generated files persist
 
 **Cut:** voice settings sliders, generation history UI, waveform, dubbing, SFX, speech-to-speech, voice library marketplace.
 
