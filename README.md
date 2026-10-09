@@ -280,10 +280,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `record` (PCM stream), `web_socket_channel`.
 
 **✅ Signature-Complete when**
-- [ ] Transcript appears live during a real call
-- [ ] Lines are attributed to different speakers
-- [ ] "Enhance" turns rough notes + transcript into structured notes
-- [ ] Past meetings persist
+- [x] Transcript appears live during a real call
+- [x] Lines are attributed to different speakers
+- [x] "Enhance" turns rough notes + transcript into structured notes
+- [x] Past meetings persist
 
 **Cut:** chat with meetings, templates, calendar, sharing, Slack/Notion integrations.
 
