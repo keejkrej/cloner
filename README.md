@@ -50,15 +50,15 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ✅ |
 | 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ✅ |
 | 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ✅ |
-| 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ⬜ |
-| 7 | Granola | live transcription · speaker labels · meeting notes | ⭐⭐⭐ | ⬜ |
-| 8 | ElevenLabs | text-to-speech · voice cloning | ⭐⭐ | ⬜ |
+| 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ✅ |
+| 7 | Granola | live transcription · speaker labels · meeting notes | ⭐⭐⭐ | ✅ |
+| 8 | ElevenLabs | text-to-speech · voice cloning | ⭐⭐ | ✅ |
 | 9 | Midjourney | diffusion API · prompt enhancer · image gallery | ⭐⭐ | ✅ |
-| 10 | Gamma | outline → slides · layout engine · themes | ⭐⭐⭐ | ⬜ |
+| 10 | Gamma | outline → slides · layout engine · themes | ⭐⭐⭐ | ✅ |
 | 11 | Devin | task planner · browser · code executor · PR bot | ⭐⭐⭐⭐⭐ | ⬜ |
 | 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ✅ |
 | 13 | Zapier AI | natural language → workflows · API connectors | ⭐⭐⭐⭐ | ⬜ |
-| 14 | Harvey | legal doc RAG · clause extraction · citations | ⭐⭐⭐ | ⬜ |
+| 14 | Harvey | legal doc RAG · clause extraction · citations | ⭐⭐⭐ | ✅ |
 | 15 | Siri | wake word · speech-to-text · tool calling · voice reply | ⭐⭐⭐ | ⬜ |
 
 ### Suggested build order
@@ -458,9 +458,9 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `pdfrx` or `syncfusion_flutter_pdf`, `data_table_2`.
 
 **✅ Signature-Complete when**
-- [ ] 3+ contracts in → cross-document answers with passage-level citations
-- [ ] Review table fills for every doc, every cell cited
-- [ ] Matters and tables persist
+- [x] 3+ contracts in → cross-document answers with passage-level citations
+- [x] Review table fills for every doc, every cell cited
+- [x] Matters and tables persist
 
 **Cut:** custom columns, CSV/XLSX export, DOCX, jump-to-passage viewer, template comparison, drafting/redlining, case law.
 
