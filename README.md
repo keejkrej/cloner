@@ -53,7 +53,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 6 | Lovable | prompt → full-stack app · live preview | ⭐⭐⭐⭐ | ⬜ |
 | 7 | Granola | live transcription · speaker labels · meeting notes | ⭐⭐⭐ | ⬜ |
 | 8 | ElevenLabs | text-to-speech · voice cloning | ⭐⭐ | ⬜ |
-| 9 | Midjourney | diffusion API · prompt enhancer · image gallery | ⭐⭐ | ⬜ |
+| 9 | Midjourney | diffusion API · prompt enhancer · image gallery | ⭐⭐ | ✅ |
 | 10 | Gamma | outline → slides · layout engine · themes | ⭐⭐⭐ | ⬜ |
 | 11 | Devin | task planner · browser · code executor · PR bot | ⭐⭐⭐⭐⭐ | ⬜ |
 | 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ✅ |
@@ -327,8 +327,8 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `flutter_staggered_grid_view`.
 
 **✅ Signature-Complete when**
-- [ ] Short prompt → enhanced prompt → 4 images
-- [ ] Gallery shows all past generations with prompts after restart
+- [x] Short prompt → enhanced prompt → 4 images
+- [x] Gallery shows all past generations with prompts after restart
 
 **Cut:** vary, upscale, favorites, search, style chips, community feed, video, editor.
 
