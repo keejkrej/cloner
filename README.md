@@ -57,7 +57,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | 10 | Gamma | outline → slides · layout engine · themes | ⭐⭐⭐ | ✅ |
 | 11 | Devin | task planner · browser · code executor · PR bot | ⭐⭐⭐⭐⭐ | ⬜ |
 | 12 | Character AI | persona prompts · long-term memory · voice | ⭐⭐ | ✅ |
-| 13 | Zapier AI | natural language → workflows · API connectors | ⭐⭐⭐⭐ | ⬜ |
+| 13 | Zapier AI | natural language → workflows · API connectors | ⭐⭐⭐⭐ | ✅ |
 | 14 | Harvey | legal doc RAG · clause extraction · citations | ⭐⭐⭐ | ✅ |
 | 15 | Siri | wake word · speech-to-text · tool calling · voice reply | ⭐⭐⭐ | ⬜ |
 
@@ -432,10 +432,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `cron`, `enough_mail`, `dio`.
 
 **✅ Signature-Complete when**
-- [ ] One sentence produces a correct multi-step workflow
-- [ ] 3+ real services are used
-- [ ] A workflow fires on its own and completes end-to-end
-- [ ] Workflows persist
+- [x] One sentence produces a correct multi-step workflow
+- [x] 3+ real services are used
+- [x] A workflow fires on its own and completes end-to-end
+- [x] Workflows persist
 
 **Cut:** visual editor, step testing, OAuth, webhooks server, running when app is closed, hundreds of integrations.
 
