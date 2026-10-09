@@ -46,7 +46,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 | # | Clone of | Signature features | Difficulty | Status |
 |---|---|---|---|---|
 | 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ✅ |
-| 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ⬜ |
+| 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ✅ |
 | 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ⬜ |
 | 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ⬜ |
 | 5 | NotebookLM | PDF chunking · RAG · audio summaries | ⭐⭐⭐ | ⬜ |
@@ -149,10 +149,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **Packages:** `html`, `url_launcher`.
 
 **✅ Signature-Complete when**
-- [ ] Any question returns a streamed answer grounded in live web results
-- [ ] A rerank step decides what the LLM sees
-- [ ] Claims carry clickable citations to real sources
-- [ ] Follow-ups work; threads persist
+- [x] Any question returns a streamed answer grounded in live web results
+- [x] A rerank step decides what the LLM sees
+- [x] Claims carry clickable citations to real sources
+- [x] Follow-ups work; threads persist
 
 **Cut:** related questions, query rewriting UI, Spaces, Discover, image/video search, Pro modes.
 
