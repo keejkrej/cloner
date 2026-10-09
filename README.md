@@ -45,7 +45,7 @@ Status: ⬜ not started · 🟨 in progress · ✅ Signature-Complete
 
 | # | Clone of | Signature features | Difficulty | Status |
 |---|---|---|---|---|
-| 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ⬜ |
+| 1 | ChatGPT | streaming chat · memory · conversation history | ⭐ | ✅ |
 | 2 | Perplexity | web search · reranker · cited answers | ⭐⭐ | ⬜ |
 | 3 | Cursor | codebase indexing · diff edits · inline autocomplete | ⭐⭐⭐⭐ | ⬜ |
 | 4 | Claude Code | agent loop · file tools · terminal sandbox | ⭐⭐⭐ | ⬜ |
@@ -123,10 +123,10 @@ Each section: **signature features → MVP (only what's needed for those) → Si
 **APIs:** one LLM provider (chat + embeddings).
 
 **✅ Signature-Complete when**
-- [ ] Responses stream live and can be stopped
-- [ ] Conversations persist and can be reopened
-- [ ] A fact told in chat A is used in a new chat B
-- [ ] Memories are viewable and deletable
+- [x] Responses stream live and can be stopped
+- [x] Conversations persist and can be reopened
+- [x] A fact told in chat A is used in a new chat B
+- [x] Memories are viewable and deletable
 
 **Cut:** model picker, regenerate, auto-titles, rename, search, image upload, voice, custom GPTs, sharing.
 
